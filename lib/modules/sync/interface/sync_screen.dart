@@ -30,7 +30,7 @@ class SyncScreen extends StatelessWidget {
                 if (status) {
                   return Lottie.asset(
                     "assets/animations/farmer_01.json",
-                    width: 200,
+                    width: 350,
                     repeat: false,
                     onLoaded: (composition) {
                       Future.delayed(const Duration(seconds: 2), () {

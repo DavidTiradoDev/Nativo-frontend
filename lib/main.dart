@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nativo_front/core/router/app_router.dart';
+import 'package:nativo_front/core/theme/app_theme.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,6 +22,14 @@ class MyApp extends StatelessWidget {
       splitScreenMode: true,
       builder: (context, child) {
         return MaterialApp.router(
+          theme: ThemeData(
+            useMaterial3: true,
+            scaffoldBackgroundColor: AppTheme.background,
+            colorScheme: ColorScheme.fromSeed(
+              seedColor: AppTheme.primary,
+              surface: AppTheme.background,
+            ),
+          ),
           title: 'Nativo',
           debugShowCheckedModeBanner: false,
           routerConfig: router,

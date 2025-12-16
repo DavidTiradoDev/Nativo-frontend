@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class AppTheme {
   AppTheme._();
 
+  // App Colors
   static const Color primary = Color(0xFF4CAF50);
   static const Color secondary = Color(0xFFFFC107);
 
@@ -19,6 +20,7 @@ class AppTheme {
 
   static const Color inputFill = Color(0xFFF1F3F4);
 
+  // FontSizes
   static const double fontTitleLarge = 26;
   static const double fontTitleMedium = 20;
   static const double fontSubtitle = 16;
@@ -26,47 +28,35 @@ class AppTheme {
   static const double fontSmall = 12;
   static const double fontButton = 16;
 
-  static const TextStyle titleLarge = TextStyle(
-    fontSize: fontTitleLarge,
-    fontWeight: FontWeight.bold,
-    color: textPrimary,
-  );
-
-  static const TextStyle titleMedium = TextStyle(
-    fontSize: fontTitleMedium,
-    fontWeight: FontWeight.w600,
-    color: textPrimary,
-  );
-
-  static const TextStyle subtitle = TextStyle(
-    fontSize: fontSubtitle,
-    fontWeight: FontWeight.w500,
-    color: textSecondary,
-  );
-
-  static const TextStyle body = TextStyle(
-    fontSize: fontBody,
-    fontWeight: FontWeight.normal,
-    color: textPrimary,
-  );
-
-  static const TextStyle small = TextStyle(
-    fontSize: fontSmall,
-    fontWeight: FontWeight.normal,
-    color: textSecondary,
-  );
-
-  static const TextStyle button = TextStyle(
-    fontSize: fontButton,
-    fontWeight: FontWeight.w600,
-    color: Colors.white,
-  );
-
+  // Spacings
   static const double spacingXS = 4;
   static const double spacingS = 8;
   static const double spacingM = 16;
   static const double spacingL = 24;
   static const double spacingXL = 32;
 
-  static const double radius = 12;
+  // BorderRadius
+  static const double smallRadius = 6;
+  static const double mediumRadius = 12;
+  static const double largeRadius = 20;
+  static const double extraLargeRadius = 32;
+
+  // Padding
+  static const double p2 = 2;
+  static const double p4 = 4;
+  static const double p8 = 8;
+  static const double p12 = 12;
+  static const double p16 = 16;
+  static const double p20 = 20;
+  static const double p24 = 24;
+  static const double p32 = 32;
+
+  // Margin
+  static const double m4 = 4;
+  static const double m8 = 8;
+  static const double m12 = 12;
+  static const double m16 = 16;
+  static const double m20 = 20;
+  static const double m24 = 24;
+  static const double m32 = 32;
 }
